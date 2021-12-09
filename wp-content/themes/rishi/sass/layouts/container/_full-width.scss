@@ -1,0 +1,67 @@
+/*===============================
+Full Width
+==============================*/
+.single-post.full-width{
+    .entry-categories,
+    .rishi-entry-header-inner .entry-title,
+    .post-meta-wrapper{
+        text-align: center;
+    }
+
+    .rishi-entry-header-inner .post-meta-inner{
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+
+    &.default-layout{
+        .post-inner-wrap,
+        .post-footer-meta-wrap,
+        .autor-section,
+        .post-navigation,
+        .comments-area{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.single.full-width.centered{
+    .rishi-breadcrumb-main-wrap,
+    .post-meta-wrapper,
+    .entry-title,
+    .post-inner-wrap, 
+    .post-footer-meta-wrap, 
+    .post-navigation, 
+    .comments-area, 
+    .autor-section{
+        max-width: var(--containerContentMaxWidth);
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+
+.page.full-width.centered{
+    .rishi-breadcrumb-main-wrap,.rishi-post .entry-header, .rishi-post .entry-content, 
+    .entry-footer,
+    .comments-area, 
+    .autor-section{
+        max-width: var(--containerContentMaxWidth);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.elementor-page.full-width.page,
+.elementor-page.full-width.centered.page{
+    .site-content .rishi-container,
+    .rishi-post .entry-content,
+    .rishi-breadcrumb-main-wrap,
+    .entry-header,
+    .entry-footer{
+        max-width: 100%;
+        padding: 0;
+        width:100%;
+    }
+} 

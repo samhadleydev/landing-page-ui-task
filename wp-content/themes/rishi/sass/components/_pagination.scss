@@ -1,0 +1,67 @@
+.rt-pagination{
+    &[data-pagination="simple"] {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;;
+    
+        .page-numbers{
+            color: var(--primaryColor);
+            margin: 0 10px;
+            &:hover{
+                color:  var(--genLinkColor);
+                &.next,
+                &.prev{
+                    svg{
+                        fill: var(--genLinkColor);
+                    }
+                }
+            }
+            &:first-child{
+                margin-left: 0;
+            }
+    
+            &:last-child{
+                margin-right: 0;
+            }
+    
+            &.current{
+                background: var(--genLinkColor);
+                border-radius: 4px;
+                color: #ffffff;
+                line-height: 1;
+                padding: 8px 15px;
+            }
+    
+            &.next{
+                margin-left: 20px;
+                svg{
+                    fill: var(--primaryColor);
+                    margin-left: 5px;
+                    height: 12px;
+                    width: 12px;
+                }
+            }
+    
+            &.prev{
+                margin-right: 20px;
+                svg{
+                    fill: var(--primaryColor);
+                    margin-right: 5px;
+                    height: 12px;
+                    width: 12px;
+                }
+            }
+        }
+    }
+
+    
+    &[data-pagination="infinite_scroll"] {
+        .page-numbers {
+            display: none;
+        }
+    }
+}
+
+.rt-load-more-helper {
+    margin-top: 30px;
+}
